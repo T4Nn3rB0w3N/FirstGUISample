@@ -54,6 +54,12 @@ public class FirstPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		myButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent mouseClick)
+			{
+				changeColor();
+			}
+		});
 	}
 }
