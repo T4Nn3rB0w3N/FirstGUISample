@@ -3,5 +3,15 @@ package gui.model;
 public class Duck
 {
 
-	private Duck myDuck;
+	private String sound;
+	
+	public Duck()
+	{
+		this.sound = "Quack";
+	}
+	
+	public String getSound()
+	{
+		return sound;
+	}
 }
