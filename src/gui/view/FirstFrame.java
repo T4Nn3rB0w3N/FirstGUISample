@@ -21,9 +21,9 @@ public class FirstFrame extends JFrame
 	private void setupFrame()
 	{
 		this.setContentPane(appPanel);
-		this.setSize(800,800);;
+		this.setSize(800,800);
 		this.setTitle("MyGui");
-		this.setResizable(true);;
+		this.setResizable(true);
 		this.setVisible(true);
 	}
 }
