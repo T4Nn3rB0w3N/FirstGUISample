@@ -8,6 +8,7 @@ public class FirstPanel extends JPanel
 	private GUIController appController;
 	private JButton myButton;
 	private JLabel myLabel;
+	private SpringLayout appLayout;
 	
 	public FirstPanel(GUIController appController)
 	{
@@ -16,6 +17,7 @@ public class FirstPanel extends JPanel
 		
 		myButton = new JButton("Click!");
 		myLabel = new JLabel("words on a line");
+		appLayout = new SpringLayout();
 		
 		setupPanel();
 		setupLayout();
@@ -24,8 +26,10 @@ public class FirstPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setLayout(appLayout);
 		this.add(myButton);
 		this.add(myLabel);
+	
 	}
 	
 	private void setupLayout()
