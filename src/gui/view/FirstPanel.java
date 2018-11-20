@@ -2,6 +2,9 @@ package gui.view;
 
 import javax.swing.*;
 import gui.controller.GUIController;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class FirstPanel extends JPanel
 {
@@ -38,6 +41,15 @@ public class FirstPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.EAST, myLabel, -86, SpringLayout.EAST, this);
 		appLayout.putConstraint(SpringLayout.WEST,  myButton, 174, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.SOUTH, myButton, -135, SpringLayout.SOUTH, this);
+	}
+	
+	private void changeColor()
+	{
+		int red = (int) (Math.random() * 256);
+		int green = (int) (Math.random() * 256);
+		int blue = (int) (Math.random() * 256);
+		
+		this.setBackground(new Color(red, green, blue));
 	}
 	
 	private void setupListeners()
