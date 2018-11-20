@@ -34,7 +34,10 @@ public class FirstPanel extends JPanel
 	
 	private void setupLayout()
 	{
-		
+		appLayout.putConstraint(SpringLayout.NORTH, myLabel, 74, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, myLabel, -86, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.WEST,  myButton, 174, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, myButton, -135, SpringLayout.SOUTH, this);
 	}
 	
 	private void setupListeners()
