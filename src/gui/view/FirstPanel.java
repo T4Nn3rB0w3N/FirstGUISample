@@ -1,8 +1,6 @@
 package gui.view;
 
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JButton;
+import javax.swing.*;
 import gui.controller.GUIController;
 
 public class FirstPanel extends JPanel
@@ -16,6 +14,9 @@ public class FirstPanel extends JPanel
 		super();
 		this.appController = appController;
 		
+		myButton = new JButton("Click!");
+		myLabel = new JLabel("words on a line");
+		
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -23,7 +24,8 @@ public class FirstPanel extends JPanel
 	
 	private void setupPanel()
 	{
-		
+		this.add(myButton);
+		this.add(myLabel);
 	}
 	
 	private void setupLayout()
